@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/mTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:tabGravity="fill"
+        app:tabMaxWidth="0dp"
+        app:tabMode="auto"
+        app:tabTextColor="#FFFFFF"
+        tools:visibility="gone">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/startext1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="歡迎使用"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/startext2"
+        android:layout_width="match_parent"
+        android:layout_height="257dp"
+        android:gravity="center"
+        android:text="新書查詢系統"
+        android:textColor="#F3FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/startext6"
+        android:layout_width="match_parent"
+        android:layout_height="117dp"
+        android:gravity="center"
+        android:text="資料下載中_請稍候......."
+        android:textColor="#77C6C6C6"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/startext3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="資料來源"
+        android:textColor="#77C6C6C6" />
+
+    <TextView
+        android:id="@+id/startext4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="國家圖書館OpenData"
+        android:textColor="#77C6C6C6" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="gone">
+
+    </androidx.viewpager.widget.ViewPager>
+</LinearLayout>
